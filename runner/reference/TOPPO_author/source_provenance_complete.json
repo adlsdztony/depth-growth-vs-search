@@ -1,0 +1,532 @@
+{
+  "repository": "https://github.com/NAIVlab/TOPPO",
+  "commit": "a764969079a05f4ce414fca538f58924052478f6",
+  "fetched_utc": "2026-11-15 14:21:30 UTC",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "0e01db542a016f44b5283ed72e2fdbc5a14905bc",
+      "size": 1068
+    },
+    {
+      "path": "NOTICE",
+      "git_blob_sha": "635d4d325cfaad7e200dd759c924ec956c30ad6b",
+      "size": 6710
+    },
+    {
+      "path": "docs/RUNS.md",
+      "git_blob_sha": "1cd12fe6767f27b4bf0f68b828fc797e1c1a4d19",
+      "size": 36982
+    },
+    {
+      "path": "docs/env_vars.md",
+      "git_blob_sha": "c04b4cad1edc4e90ce7167f44f1986b42581dd27",
+      "size": 7457
+    },
+    {
+      "path": "experiments/metaworld_ppo/README.md",
+      "git_blob_sha": "35de022afc2de6e9833851b3f87d034114519f72",
+      "size": 14480
+    },
+    {
+      "path": "experiments/metaworld_ppo/analysis/aggregate.py",
+      "git_blob_sha": "9f634677645554eabc25c1eec81f571aec9e99f2",
+      "size": 9776
+    },
+    {
+      "path": "experiments/metaworld_ppo/analysis/check_runs_index.py",
+      "git_blob_sha": "7bd1c884cb11355027d5fa83a34f3cc05f3e67fc",
+      "size": 17421
+    },
+    {
+      "path": "experiments/metaworld_ppo/analysis/collect_csv.py",
+      "git_blob_sha": "610d585482bfb101df614cc31b1b286846cb37a7",
+      "size": 4308
+    },
+    {
+      "path": "experiments/metaworld_ppo/analysis/export_wandb.py",
+      "git_blob_sha": "dd71f8010cbdba4c6d0e6b5a2a192ae38acb8762",
+      "size": 7520
+    },
+    {
+      "path": "experiments/metaworld_ppo/analysis/matched_step.py",
+      "git_blob_sha": "3520482bd0bddb6f1f8919b7dc3dbc163b34be73",
+      "size": 4847
+    },
+    {
+      "path": "experiments/metaworld_ppo/analysis/mechanism.py",
+      "git_blob_sha": "8634717836edea69f9fc86e402f3cf1d0b563a90",
+      "size": 7731
+    },
+    {
+      "path": "experiments/metaworld_ppo/analysis/mechanism_agg.py",
+      "git_blob_sha": "cbc8c72f30813ca019fad8fae791c561496014d8",
+      "size": 4007
+    },
+    {
+      "path": "experiments/metaworld_ppo/analysis/metrics.py",
+      "git_blob_sha": "698cd2e8a01b95822cfc2d2c3c89f91302ab9bd1",
+      "size": 20384
+    },
+    {
+      "path": "experiments/metaworld_ppo/benchmarks/solver/solverbench_rfv1.csv",
+      "git_blob_sha": "5c71c97e24b38ed43cb8206a29ac10e1ac573578",
+      "size": 99357
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/debug_ppo.yaml",
+      "git_blob_sha": "3adc2721942263e9979bd433a694bba5b995bb45",
+      "size": 1372
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt10_popart_ema.yaml",
+      "git_blob_sha": "cbabb8e1a2957ae88556f13ca85426d3ddada571",
+      "size": 1894
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_acag_cfg_popart_ema_lnc_rfv1.yaml",
+      "git_blob_sha": "78aa265a6039f2c6cbd0dbcc1d49c3e576395718",
+      "size": 1390
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_acag_cfg_popart_ema_lnc_rfv2.yaml",
+      "git_blob_sha": "e4743465fae9060a7a03d6a233acce4bc566953b",
+      "size": 1339
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_ad_cfg_popart_ema_lnc_rfv1.yaml",
+      "git_blob_sha": "07b5336c0752f6bb86f7b43a0ccc1a706f60350a",
+      "size": 1554
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_ad_cfg_popart_ema_lnc_rfv2.yaml",
+      "git_blob_sha": "02115182298d8422fa40d987fc0514c626f9cc8d",
+      "size": 1503
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg0.5_cfg_popart_ema_lnc_rfv1.yaml",
+      "git_blob_sha": "3629d9d91ef94166ef146de6616f7919a5a23cea",
+      "size": 1404
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg0.5_cfg_popart_ema_lnc_rfv2.yaml",
+      "git_blob_sha": "1a1c4275998c4716fa320f38be84cf458f9a4338",
+      "size": 1353
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg10_cfg_popart_ema_lnc_rfv1.yaml",
+      "git_blob_sha": "adb2457f27ef323dcab188db168fb4906a4ed73f",
+      "size": 1403
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg10_cfg_popart_ema_lnc_rfv2.yaml",
+      "git_blob_sha": "674bffaf123fe7640a577944ba0e601fcf9d0450",
+      "size": 1352
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg1_cfg_popart_ema_lnc_rfv1.yaml",
+      "git_blob_sha": "a92d6dcc08e4856053c2bdae6849b67a418b8bc5",
+      "size": 1400
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg1_cfg_popart_ema_lnc_rfv2.yaml",
+      "git_blob_sha": "39793f17c19536f3891e0dcb0b07f6b80b21b8c5",
+      "size": 1349
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg2_cfg_popart_ema_lnc_rfv1.yaml",
+      "git_blob_sha": "74139734551b8940c3896a0619aeec5a03234290",
+      "size": 1400
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg2_cfg_popart_ema_lnc_rfv2.yaml",
+      "git_blob_sha": "f65de0c8c5cee7fb587218da4044737575b0523a",
+      "size": 1349
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg5_cfg_popart_ema_lnc_rfv1.yaml",
+      "git_blob_sha": "6861c1b336c719019f06271a1352d0fb61b1fbba",
+      "size": 1400
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_afg5_cfg_popart_ema_lnc_rfv2.yaml",
+      "git_blob_sha": "01d0a876c66efc097fcc58fcedd99af64c220223",
+      "size": 1349
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_apcg_cfg_popart_ema_lnc_rfv1.yaml",
+      "git_blob_sha": "f0f527f6d9a96ef6decc1e354ad4941d6319f976",
+      "size": 1370
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_apcg_cfg_popart_ema_lnc_rfv2.yaml",
+      "git_blob_sha": "b01cab89c7420147f9ff2734f0879b41872bc8d8",
+      "size": 1319
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/post_submission/ppo_mt50_popart_ema.yaml",
+      "git_blob_sha": "ec50ff2cd38c84a1248a9e5895b54b61a52ee9b5",
+      "size": 1896
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt10_cagrad.yaml",
+      "git_blob_sha": "a7fbfce91fc94687cf6110bcded6946a2a6836f4",
+      "size": 1175
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt10_default.yaml",
+      "git_blob_sha": "ea9a870007b551149daa707ea88e226d3c8878e4",
+      "size": 1159
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt10_fairgrad.yaml",
+      "git_blob_sha": "6917f63c781eeb4135e26acb1346ab1a90aaa14b",
+      "size": 1220
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt10_pcgrad.yaml",
+      "git_blob_sha": "9e5658953f2f6fe91d36e20c5762388203ffbd0d",
+      "size": 1155
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt10_popart.yaml",
+      "git_blob_sha": "dfff60e2c6c7d841dc60010173eb027e63e8d479",
+      "size": 1624
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt10_toppo_lnc_rfv2.yaml",
+      "git_blob_sha": "0f2900ffcc592a531d51c65d1342a8190e9d6cb1",
+      "size": 1537
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt10_vanilla_rfv2.yaml",
+      "git_blob_sha": "7842676e8b3cc3da52c33e2edff5308da4cc3978",
+      "size": 1552
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_ad_cfg_popart_lnc_rfv1.yaml",
+      "git_blob_sha": "0799a840f47d7704fb9e6b97237668c366663a09",
+      "size": 1792
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_ad_cfg_popart_lnc_rfv2.yaml",
+      "git_blob_sha": "ea8f0b5ae4513359a929835c8beb05710da303b4",
+      "size": 1792
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_cagrad.yaml",
+      "git_blob_sha": "f03b1902eda0737a3bae485097dffe400e684bd7",
+      "size": 1177
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_default.yaml",
+      "git_blob_sha": "eca833ecf3db63a4d762e3ab7d426219acdf349c",
+      "size": 1161
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_fairgrad.yaml",
+      "git_blob_sha": "12a703a9d659b86058238337504c92de1e939e3c",
+      "size": 1222
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_fullstack_hlgausspopart_lnc_rfv1.yaml",
+      "git_blob_sha": "50b27ad38ee1c2f70e479dedbf0a18dc94fdd071",
+      "size": 2346
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_fullstack_hlgaussrewnorm_lnc_rfv1.yaml",
+      "git_blob_sha": "f5dde25264cece812029c0efcd90fb670c9ae3d5",
+      "size": 2388
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_fullstack_rewnorm_lnc_rfv1.yaml",
+      "git_blob_sha": "69d43b5b35d067c3dd45372df719feb833fa1535",
+      "size": 1399
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_hlgauss_lnc_rfv1.yaml",
+      "git_blob_sha": "8b0d174bb427fbd867b6df2df3a52619b3efaccf",
+      "size": 1858
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_hlgauss_lnc_rfv2.yaml",
+      "git_blob_sha": "522d0287b4c97fb11f057825204bdcce07bce999",
+      "size": 1824
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_hlgausspopart_lnc_rfv1.yaml",
+      "git_blob_sha": "a897ba77cabfd3795c1c9ad04fc6221103afc0cf",
+      "size": 2613
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_hlgaussretscale_lnc_rfv1.yaml",
+      "git_blob_sha": "6e703445d64cdbf0a7a31f106136e5b01842071e",
+      "size": 2274
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_hlgaussretscale_lnc_rfv2.yaml",
+      "git_blob_sha": "f5e390e80453e357dd55ff8d7420a4d184b66712",
+      "size": 2286
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_hlgaussrewnorm101_lnc_rfv1.yaml",
+      "git_blob_sha": "faacc5622a742b1ba5ddcbcf9327874e6ce91d69",
+      "size": 2396
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_hlgaussrewnorm_lnc_rfv1.yaml",
+      "git_blob_sha": "a1893692a658ac2e1c1cbedb706ce5e6f30489b3",
+      "size": 2402
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_hlgaussrewnorm_lnc_rfv2.yaml",
+      "git_blob_sha": "17ee2b56c5d1db825020a0aab0afdb64c2cfdbab",
+      "size": 2351
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_novclip_lnc_rfv1.yaml",
+      "git_blob_sha": "cb0a950362e00e791af5c08ebeb634d10150240d",
+      "size": 1935
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_pcgrad.yaml",
+      "git_blob_sha": "2088b38b176416dd620d5a818e356b4a75bfe44a",
+      "size": 1157
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_popart.yaml",
+      "git_blob_sha": "53477e75a5691c5f4bbdfa872547b0c1e0d9b190",
+      "size": 1626
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_popartnovc_lnc_rfv1.yaml",
+      "git_blob_sha": "87c66376f8d430decc68ff4720df033981462c57",
+      "size": 1285
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_retscale_lnc_rfv1.yaml",
+      "git_blob_sha": "d8152e247251a1fcb09228660d7821199632354a",
+      "size": 1686
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_retscale_lnc_rfv2.yaml",
+      "git_blob_sha": "69410e1983efa401ae62d89b6a7ea4b547f28951",
+      "size": 1658
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_retscalenovc_lnc_rfv1.yaml",
+      "git_blob_sha": "1f796e8d60485a3e7edb2edcbc4882deeaf64e82",
+      "size": 1729
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_retscaletrunc_lnc_rfv1.yaml",
+      "git_blob_sha": "3e0439941e7dbebc58fde58f8fe3084beaee1031",
+      "size": 1798
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_rewnorm_lnc_rfv1.yaml",
+      "git_blob_sha": "0335c5cf4a2bad6034cd9383594bacda227a32ee",
+      "size": 1685
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_rewnorm_lnc_rfv2.yaml",
+      "git_blob_sha": "117b905ea12563d40f762e5c07a8d16a16f4b1bc",
+      "size": 1657
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_rewnormnovc_lnc_rfv1.yaml",
+      "git_blob_sha": "8dfd69893c50f80291c1b2da157a516826eafbbd",
+      "size": 1325
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_toppo_lnc_rfv1.yaml",
+      "git_blob_sha": "50a9c10cbf5b6da7465fe307c87ec31a53183f21",
+      "size": 1540
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_toppo_lnc_rfv2.yaml",
+      "git_blob_sha": "368a86f9082a7f6c95d8305704c2fbd11857f64a",
+      "size": 1621
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_vanilla_rfv1.yaml",
+      "git_blob_sha": "f3dc563cdae66b79493096881a9cdf438b63e159",
+      "size": 1584
+    },
+    {
+      "path": "experiments/metaworld_ppo/configs/ppo_mt50_vanilla_rfv2.yaml",
+      "git_blob_sha": "2f457f5770c4a22a4e1ac248d42990e31c27a0b7",
+      "size": 1555
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/__init__.py",
+      "git_blob_sha": "66329b27935197d0beed1c2585aecfd8d92ce0dc",
+      "size": 65
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/algos/__init__.py",
+      "git_blob_sha": "33d306b5992f8cfac4bd4f3367064a0567e2ecba",
+      "size": 83
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/algos/multitask_ppo.py",
+      "git_blob_sha": "65ce001572ee8ae70a02c5b5271815852ccd3db7",
+      "size": 82655
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/algos/return_scaling.py",
+      "git_blob_sha": "be148b3efced8737b499ef3adbf300ad8de688ef",
+      "size": 5102
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/envs/__init__.py",
+      "git_blob_sha": "033d948e426cb27f722463b07608c058e947d2d8",
+      "size": 114
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/envs/metaworld_wrapper.py",
+      "git_blob_sha": "2ac2c7034128a723c8c0bb970753e541f6a12772",
+      "size": 16508
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/gradients/__init__.py",
+      "git_blob_sha": "2381ef601460cf99b9bc1f825047228e3c8e8f84",
+      "size": 351
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/gradients/cagrad.py",
+      "git_blob_sha": "219379dfa785dbef925009394fd8b3a8597e25f2",
+      "size": 5302
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/gradients/fairgrad.py",
+      "git_blob_sha": "18c42b2ad0b8ee6ae6883bd17f41fc575963a780",
+      "size": 18847
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/gradients/pcgrad.py",
+      "git_blob_sha": "2244762a1289fc60c2f0915e048b8a3b3ec14d4e",
+      "size": 4466
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/gradients/per_side.py",
+      "git_blob_sha": "6b31bb8d93c0162312cca846571f6959545c536e",
+      "size": 7791
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/gradients/scope.py",
+      "git_blob_sha": "3d5ba36688435c756a48cd6353ee145a55e895a6",
+      "size": 17925
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/models/__init__.py",
+      "git_blob_sha": "2eaf97d93a4854a865099e6a2f357a6688dd07c3",
+      "size": 144
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/models/hlgauss.py",
+      "git_blob_sha": "9d011253417b604c74fd3478cabf6d15c668f6b3",
+      "size": 3366
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/models/linear_baseline.py",
+      "git_blob_sha": "9d0dcbbbe9b14b1a0e337a5f5643d2b40a027641",
+      "size": 4825
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/models/multitask_policy.py",
+      "git_blob_sha": "593705692f73d48048c5486391e539d7db00b8cc",
+      "size": 1303
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/models/networks.py",
+      "git_blob_sha": "88fdba58173d7e6b94f108de95d9db4d000365b7",
+      "size": 36326
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/utils/__init__.py",
+      "git_blob_sha": "b9982923140acdc88e47ba5c483713a29bb5957f",
+      "size": 207
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/utils/checkpoints.py",
+      "git_blob_sha": "03468fe074400b78a45ccbdb0f58cf43eb7e59aa",
+      "size": 10120
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/utils/config.py",
+      "git_blob_sha": "e3819d9bfc9bcdb9b9a30e0e07500bfa66e782a1",
+      "size": 14590
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/utils/grad_snapshots.py",
+      "git_blob_sha": "676d68eac0721c4abcc279d27d92577411cc205c",
+      "size": 16767
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/utils/logger.py",
+      "git_blob_sha": "083b05c9ac374566e82eaf5881ed1c29ad0fd82a",
+      "size": 30785
+    },
+    {
+      "path": "experiments/metaworld_ppo/mtrl/utils/multitask_collector.py",
+      "git_blob_sha": "6e530cc1509b318378d7227ff4789a59d6f3a299",
+      "size": 3442
+    },
+    {
+      "path": "experiments/metaworld_ppo/requirements-dev.txt",
+      "git_blob_sha": "9db9f1b37f3f48770dd1162465b3b13cc56dca0d",
+      "size": 103
+    },
+    {
+      "path": "experiments/metaworld_ppo/requirements.txt",
+      "git_blob_sha": "f430cbfeaa98b4cd953f8ef1d3831ef7132fae9b",
+      "size": 1155
+    },
+    {
+      "path": "experiments/metaworld_ppo/tests/__init__.py",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "experiments/metaworld_ppo/tests/test_bug_fixes.py",
+      "git_blob_sha": "3c701cd38403223e1f0336c6a9dc69bfae7d23f2",
+      "size": 8371
+    },
+    {
+      "path": "experiments/metaworld_ppo/tests/test_fairgrad_nan_guard.py",
+      "git_blob_sha": "e6c98db8a12c7b6d82cf3a828544b0875ab48eef",
+      "size": 12596
+    },
+    {
+      "path": "experiments/metaworld_ppo/tests/test_grad_snapshots.py",
+      "git_blob_sha": "e96251c6f6d7e3f9f645d49e7f223b12f4b71f37",
+      "size": 16611
+    },
+    {
+      "path": "experiments/metaworld_ppo/tests/test_minibatch_sampling.py",
+      "git_blob_sha": "a0e4d8d213973ffcbc136384435a6a5a1fd2323c",
+      "size": 3873
+    },
+    {
+      "path": "experiments/metaworld_ppo/tests/test_normalizers.py",
+      "git_blob_sha": "f8ff32417128e469178e526e5218fd5634772e22",
+      "size": 15200
+    },
+    {
+      "path": "experiments/metaworld_ppo/tests/test_popart.py",
+      "git_blob_sha": "5af65aa08acc8ce91a97d6a896e368ae4581d1a0",
+      "size": 22047
+    },
+    {
+      "path": "experiments/metaworld_ppo/tests/test_scope.py",
+      "git_blob_sha": "0845536a7ba40ac84cf053d26df6d817af82fbee",
+      "size": 26962
+    },
+    {
+      "path": "experiments/metaworld_ppo/train.py",
+      "git_blob_sha": "f159f967a1fb918e08b4263664675720c0396878",
+      "size": 31902
+    }
+  ]
+}

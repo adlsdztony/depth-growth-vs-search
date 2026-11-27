@@ -1,0 +1,21 @@
+{
+  "phase": "development",
+  "method": "fixed",
+  "run_id": "fixed_w400_d4_s4",
+  "variant": "depth_sweep_heldout_goals_v1",
+  "seed": 4,
+  "benchmark_seed": 17719,
+  "insertion_seed": 504,
+  "training_steps_cap": 3000000,
+  "rollout_per_quantum": 100000,
+  "assessment_goals_per_task": 30,
+  "final_assessment_reserve_s": 600,
+  "cleanup_reserve_s": 30,
+  "initial_quantum_upper_s": 150,
+  "author_config": "configs/learner.yaml",
+  "learning_rate": 0.0003,
+  "width": 400,
+  "depth": 4,
+  "grow_at": [],
+  "eval_every": 500000
+}

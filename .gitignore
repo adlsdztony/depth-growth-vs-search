@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Raw training output (campaign copies, checkpoints); only results/runs/ is tracked
+/runs/
+/raw/
+*.pt
+*.tmp
+worker.log
+
+# LaTeX build files (report/main.pdf is tracked)
+report/*.aux
+report/*.log
+report/*.bbl
+report/*.blg
+report/*.out
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

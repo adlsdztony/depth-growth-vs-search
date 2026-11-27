@@ -1,0 +1,24 @@
+{
+  "phase": "development",
+  "method": "grow",
+  "run_id": "grow_w128_d1_g500k-1000k_s1",
+  "variant": "depth_sweep_heldout_goals_v1",
+  "seed": 1,
+  "benchmark_seed": 17719,
+  "insertion_seed": 501,
+  "training_steps_cap": 3000000,
+  "rollout_per_quantum": 100000,
+  "assessment_goals_per_task": 30,
+  "final_assessment_reserve_s": 600,
+  "cleanup_reserve_s": 30,
+  "initial_quantum_upper_s": 150,
+  "author_config": "configs/learner.yaml",
+  "learning_rate": 0.0003,
+  "width": 128,
+  "depth": 1,
+  "grow_at": [
+    500000,
+    1000000
+  ],
+  "eval_every": 500000
+}

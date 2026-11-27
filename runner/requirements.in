@@ -1,0 +1,13 @@
+torch==2.8.0
+metaworld==3.0.0
+tianshou==2.0.0
+mujoco==3.7.0
+gymnasium==1.2.3
+numpy==2.4.4
+scipy==1.17.0
+pyyaml==6.0.3
+tyro==1.0.13
+wandb==0.26.0
+tensorboard==2.20.0
+imageio
+imageio-ffmpeg
